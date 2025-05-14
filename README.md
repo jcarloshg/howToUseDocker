@@ -1,4 +1,4 @@
-# How to use Docker? 🐳🚀
+# How to use Docker 🐳🚀
 
 ## 🌟 Description 🌟
 
