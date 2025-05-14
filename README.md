@@ -12,71 +12,71 @@
 
 - Get ready to learn about Docker! 🐳🚀
 
-## 📋 Index
+## 📋 Index 📚
 
-### 01 - Intro
+### 01 - Intro 📖
 
-- [**05 - Qué es Docker**](#05---qué-es-docker)
-- [**09 - Proceso de desarrollo con Docker**](#09---proceso-de-desarrollo-con-docker)
+- [**05 - Qué es Docker 🐳**](#05---qué-es-docker-🐳)
+- [**09 - Proceso de desarrollo con Docker 🔄**](#09---proceso-de-desarrollo-con-docker-🔄)
 
-### 02 - Build Images
+### 02 - Build Images 🏗️
 
-- [**02 - Imagen vs contenedor**](#02---imagen-vs-contenedor)
-  - [**Abstraction**](#abstraction)
-  - [**Image vs container**](#image-vs-container)
-- [**04 - Dockerfile**](#04---dockerfile)
-- [**05 - Select one image / run one container**](#05---select-one-image--run-one-container)
-- [**06 - Copy file into the container**](#06---copy-file-into-the-container)
-- [**07 - Ignore file**](#07---ignore-file)
-- [**08 - Run commands**](#08---run-commands)
-- [**09 - Accelerate images**](#09---accelerate-images)
-- [**10 - Environment variables**](#10---environment-variables)
-- [**11 - Commands CMD**](#11---commands-cmd)
-  - [**RUN vs CMD**](#run-vs-cmd)
-  - [**Entrypoint**](#entrypoint)
-- [**12 - Ports**](#12---ports)
-- [**13 - Users**](#13---users)
-  - [**Create users and groups**](#create-users-and-groups)
-  - [**Add the command in Dockerfile**](#add-the-command-in-dockerfile)
-- [**14 - Delete images**](#14---delete-images)
-- [**15 - Tags**](#15---tags)
+- [**02 - Imagen vs contenedor 🖼️**](#02---imagen-vs-contenedor-🖼️)
+  - [**Abstraction 🧩**](#abstraction-🧩)
+  - [**Image vs container 🛠️**](#image-vs-container-🛠️)
+- [**04 - Dockerfile 📜**](#04---dockerfile-📜)
+- [**05 - Select one image / run one container 🖼️➡️📦**](#05---select-one-image--run-one-container-🖼️➡️📦)
+- [**06 - Copy file into the container 📂➡️📦**](#06---copy-file-into-the-container-📂➡️📦)
+- [**07 - Ignore file 🚫📂**](#07---ignore-file-🚫📂)
+- [**08 - Run commands 🏃‍♂️💻**](#08---run-commands-🏃‍♂️💻)
+- [**09 - Accelerate images ⚡**](#09---accelerate-images-⚡)
+- [**10 - Environment variables 🌍🔧**](#10---environment-variables-🌍🔧)
+- [**11 - Commands CMD 🖥️**](#11---commands-cmd-🖥️)
+  - [**RUN vs CMD ⚔️**](#run-vs-cmd-⚔️)
+  - [**Entrypoint 🚪**](#entrypoint-🚪)
+- [**12 - Ports 🌐**](#12---ports-🌐)
+- [**13 - Users 👤**](#13---users-👤)
+  - [**Create users and groups 👥**](#create-users-and-groups-👥)
+  - [**Add the command in Dockerfile 📝**](#add-the-command-in-dockerfile-📝)
+- [**14 - Delete images 🗑️**](#14---delete-images-🗑️)
+- [**15 - Tags 🏷️**](#15---tags-🏷️)
 
-### 03 - Containers
+### 03 - Containers 📦
 
-- [**02 - Start Containers**](#02---start-containers)
-  - [**Create one container**](#create-one-container)
-  - [**Create one container setting up a name**](#create-one-container-setting-up-a-name)
-  - [**Start a container**](#start-a-container)
-  - [**Docker run && Docker stop**](#docker-run--docker-stop)
-- [**03 - Logs**](#03---logs)
-  - [**Logs -f**](#logs--f)
-  - [**Logs -n**](#logs--n)
-  - [**Logs -t**](#logs--t)
-- [**04 - Ports**](#04---ports)
-- [**05 - Start vs Run**](#05---start-vs-run)
-- [**06 - Delete containers**](#06---delete-containers)
-- [**07 - Execute commands**](#07---execute-commands)
-  - [**In mode interactive**](#in-mode-interactive)
-  - [**Only execute one command**](#only-execute-one-command)
+- [**02 - Start Containers 🚀**](#02---start-containers-🚀)
+  - [**Create one container 🆕📦**](#create-one-container-🆕📦)
+  - [**Create one container setting up a name 🏷️📦**](#create-one-container-setting-up-a-name-🏷️📦)
+  - [**Start a container ▶️📦**](#start-a-container-▶️📦)
+  - [**Docker run && Docker stop 🏃‍♂️⏹️**](#docker-run--docker-stop-🏃‍♂️⏹️)
+- [**03 - Logs 📜**](#03---logs-📜)
+  - [**Logs -f 🔍**](#logs--f-🔍)
+  - [**Logs -n 🔢**](#logs--n-🔢)
+  - [**Logs -t 🕒**](#logs--t-🕒)
+- [**04 - Ports 🌐**](#04---ports-🌐)
+- [**05 - Start vs Run ⚔️**](#05---start-vs-run-⚔️)
+- [**06 - Delete containers 🗑️📦**](#06---delete-containers-🗑️📦)
+- [**07 - Execute commands 🏃‍♂️💻**](#07---execute-commands-🏃‍♂️💻)
+  - [**In mode interactive 🖱️**](#in-mode-interactive-🖱️)
+  - [**Only execute one command 🛠️**](#only-execute-one-command-🛠️)
 
-### 04 - Multiple Containers
+### 04 - Multiple Containers 🤝
 
-- [**02 - Clean all**](#02---clean-all)
-- [**04 - File docker-compose.yml**](#04---file-docker-compose-yml)
-- [**05 - Management the images**](#05---management-the-images)
-  - [**Create**](#create)
-  - [**Read**](#read)
-  - [**Update**](#update)
-  - [**Delete**](#delete)
-- [**06 - Logs**](#06---logs)
-- [**07 - Networks**](#07---networks)
-  - [**Kinds of networks**](#kinds-of-networks)
-  - [**DNS**](#dns)
-- [**08 - Independent Containers**](#08---independent-containers)
+- [**02 - Clean all 🧹**](#02---clean-all-🧹)
+- [**04 - File docker-compose.yml 📜**](#04---file-docker-compose-yml-📜)
+- [**05 - Management the images 🛠️**](#05---management-the-images-🛠️)
+  - [**Create 🆕**](#create-🆕)
+  - [**Read 📖**](#read-📖)
+  - [**Update 🔄**](#update-🔄)
+  - [**Delete 🗑️**](#delete-🗑️)
+- [**06 - Logs 📜**](#06---logs-📜)
+- [**07 - Networks 🌐**](#07---networks-🌐)
+  - [**Kinds of networks 🌉**](#kinds-of-networks-🌉)
+  - [**DNS 🌐🔗**](#dns-🌐🔗)
+- [**08 - Independent Containers 🛠️**](#08---independent-containers-🛠️)
 
-# 01 - Intro
+# 01 - Intro 📖
 
-## **05 - Qué es Docker**
+## **05 - Qué es Docker 🐳**
 
 - Docker, contruye, ejecuta y despliega
 - Pueden generar paquetes de nuestra app
@@ -85,7 +85,7 @@
 - Podemos tener versiones diferentes de las dependencias
   - cada paquete puede tener versiones especificas del sofware que la app desarrollada este utilizando
 
-## **09 - Proceso de desarrollo con Docker**
+## **09 - Proceso de desarrollo con Docker 🔄**
 
 - `Contenedores` son → `Procesos`
   - Los `Procesos` tienen su propio sistema de archivos
@@ -95,11 +95,11 @@
   - `Docker Hub` es como GitHub, puede almacenar `Imagenes`
   - Puede ser descargado por nuestro ambiente de `producción/qa`
 
-# 02 - Build images
+# 02 - Build images 🏗️
 
-## **02 - Imagen vs contenedor**
+## **02 - Imagen vs contenedor 🖼️**
 
-### Abstraction
+### Abstraction 🧩
 
 - The `application` contains the
   - code
@@ -110,7 +110,7 @@
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image.png)
 
-### Image vs container
+### Image vs container 🛠️
 
 - one `image` contains the signature to run one `container`
 - one `container` borns from one `image`
@@ -118,7 +118,7 @@
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%201.png)
 
-## 04 - Dockerfile
+## 04 - Dockerfile 📜
 
 ```docker
 # FROM          set the specific base image
@@ -133,7 +133,7 @@
 # ENTRYPOINT    set the command to run when the container starts
 ```
 
-## 05 - Select one image / run one container
+## 05 - Select one image / run one container 🖼️➡️📦
 
 ```docker
 # Dockerfile
@@ -155,7 +155,7 @@ v20.5.0
 / #
 ```
 
-## 06 - Copy file into the container
+## 06 - Copy file into the container 📂➡️📦
 
 - add the next lines to add file into the container
 
@@ -206,7 +206,7 @@ index.html                      public
 /app #
 ```
 
-## 07 - ignore file
+## 07 - Ignore file 🚫📂
 
 - the weight of the container is smaller
 - the container will be faster
@@ -215,7 +215,7 @@ index.html                      public
 - Now you don’t see the folder `/node_modules`
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%203.png)
 
-## 08 - Run commands
+## 08 - Run commands 🏃‍♂️💻
 
 - you need to add this
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%204.png)
@@ -224,7 +224,7 @@ index.html                      public
 - The command was execurted and the `/node_modules` was added
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%205.png)
 
-## 09 - Accelerate images
+## 09 - Accelerate images ⚡
 
 - With the command we can watch the steps that the container follows with each size.
   ```bash
@@ -243,7 +243,7 @@ index.html                      public
   ```
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%208.png)
 
-## 10 - Envarionment variables
+## 10 - Environment variables 🌍🔧
 
 - add the variables
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%209.png)
@@ -255,7 +255,7 @@ index.html                      public
   ```
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2010.png)
 
-## 11 - Commands CMD
+## 11 - Commands CMD 🖥️
 
 - Execute the next comands
   - `sudo docker ps` to see the current running containers
@@ -268,31 +268,31 @@ index.html                      public
   ```
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2011.png)
 
-### RUN vs CDM
+### RUN vs CMD ⚔️
 
 - RUN runs when the container is being created.
 - CDM runs after the container was setted up.
 
-### Entrypoint
+### Entrypoint 🚪
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2012.png)
 
-## 12 - Ports
+## 12 - Ports 🌐
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2013.png)
 
-## 13 - Users
+## 13 - Users 👤
 
 - check what user is running in the container
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2014.png)
 
-### Create users and groups
+### Create users and groups 👥
 
 1.  ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2015.png)
 
 2.  ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2016.png)
 
-### Add the command in Dockerfile
+### Add the command in Dockerfile 📝
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2017.png)
 
@@ -322,7 +322,7 @@ index.html                      public
   - Now the folder app belogs to the user `user01`
     ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2023.png)
 
-## 14 - Delete images
+## 14 - Delete images 🗑️
 
 ```bash
 $ sudo docker ps                    # list the current running containers
@@ -335,7 +335,7 @@ $ sudo docker image rm first-docker-app-react # delete one image using the curre
 $ sudo docker image rm 74c          # delete one image using the image id
 ```
 
-## 15 - Tags
+## 15 - Tags 🏷️
 
 ```bash
 $ sudo docker image rm app-react:2
@@ -365,24 +365,11 @@ $ sudo docker images
   ```
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2026.png)
 
-# 03 - Containers
+# 03 - Containers 📦
 
-## 02 - Start Containers
+## 02 - Start Containers 🚀
 
-```bash
-$ sudo docker create --name pepe01 app-react:2
-$ sudo docker ps -a
-$ sudo docker start pepe01
-$ sudo docker ps
-
-$ sudo docker run -d --name pepe-run app-react:2
-$ sudo docker stop cac
-$ sudo docker ps -a
-
-$ sudo docker container prune
-```
-
-### Create one contianer
+### Create one container 🆕📦
 
 - This command will create one contianer from `app-react` with the `tag`
 - Docker gives autotically one name
@@ -395,7 +382,7 @@ sudo docker create app-react:2
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%201.png)
 
-### Create one container setting up a name
+### Create one container setting up a name 🏷️📦
 
 ```bash
 $ sudo docker create --name pepe01 app-react:2
@@ -406,7 +393,7 @@ $ sudo docker ps -a
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%203.png)
 
-### Start a container
+### Start a container ▶️📦
 
 ```bash
 $ sudo docker start pepe01
@@ -415,7 +402,7 @@ $ sudo docker ps
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%204.png)
 
-### Docker run && Docker stop
+### Docker run && Docker stop 🏃‍♂️⏹️
 
 ```bash
 $ sudo docker run -d --name pepe-run app-react:2
@@ -427,7 +414,7 @@ $ sudo docker ps -a
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%206.png)
 
-## 03 - logs
+## 03 - Logs 📜
 
 ```bash
 $ sudo docker images
@@ -468,13 +455,13 @@ $ sudo docker ps
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%2010.png)
 
-## **04 - ports**
+## **04 - Ports 🌐**
 
 - Add the flag `-p 5173:5173`
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%2011.png)
 
-## 05 - start - run
+## 05 - Start vs Run ⚔️
 
 - `run` use many commands like
   - pull && start
@@ -482,7 +469,7 @@ $ sudo docker ps
 - `start` only has the task to setting up one container that it has the state stop
   - this command not create a new container
 
-## **06 - delete containers**
+## **06 - Delete containers 🗑️📦**
 
 - `sudo docker ps -a` to list all containers
 - `sudo docker container rm -f 38b8` to delete one contianer that it is running
@@ -494,7 +481,7 @@ $ sudo docker container rm -f 38b8
 $ sudo docker container rm c18
 ```
 
-## 07 - Execute commands
+## 07 - Execute commands 🏃‍♂️💻
 
 ```bash
 $ sudo docker run -d -p 80:5173 --name pepe-run app-react:3
@@ -502,7 +489,7 @@ $ sudo docker exec -it pepe-run sh
 $ sudo docker exec pepe-run ls
 ```
 
-### in mode interactive
+### in mode interactive 🖱️
 
 - you need to pass the flag `-it` interactive
 - run the command `ls` and `exit`
@@ -513,7 +500,7 @@ $ sudo docker exec -it pepe-run sh
 
 ![image.png](03%20-%20Containers%201e88a69dcec7800eb40ee1dc03c66a44/image%2012.png)
 
-### only execute one command
+### only execute one command 🛠️
 
 - You don’t need to send the flag `-it`
 - only if you want to send a command
@@ -522,9 +509,9 @@ $ sudo docker exec -it pepe-run sh
 $ sudo docker exec pepe-run ls
 ```
 
-# 04 - Multiple Containers
+# 04 - Multiple Containers 🤝
 
-## 02 - Clean all
+## 02 - Clean all 🧹
 
 - clean containers
   ```bash
@@ -539,7 +526,7 @@ $ sudo docker exec pepe-run ls
   $ sudo docker image ls -q
   ```
 
-## **04 - File docker-compose yml**
+## **04 - File docker-compose.yml 📜**
 
 - The `version` is only informatvie
 - The section `services` is where you specify all the applications that they have communication between them.
@@ -611,9 +598,9 @@ volumes:
   gamify:
 ```
 
-## 05 - Management the images
+## 05 - Management the images 🛠️
 
-### create:
+### Create 🆕
 
 - build: Build or rebuild services
 - up: Create and start containers
@@ -622,7 +609,7 @@ volumes:
 - commit: Create a new image from a service container's changes
 - publish: Publish compose application
 
-### read:
+### Read 📖
 
 - logs: View output from containers
 - ps: List containers
@@ -635,7 +622,7 @@ volumes:
 - port: Print the public port for a port binding
 - top: Display the running processes
 
-### update:
+### Update 🔄
 
 - exec: Execute a command in a running container
 - restart: Restart service containers
@@ -645,7 +632,7 @@ volumes:
 - unpause: Unpause services
 - watch: Watch build context for service and rebuild/refresh containers when files are updated
 
-### delete:
+### Delete 🗑️
 
 - down: Stop and remove containers, networks
 - stop: Stop services
@@ -676,9 +663,9 @@ volumes:
   --dry-run             Execute command in dry run mode**
   ```
 
-## **07 - Networks**
+## **07 - Networks 🌐**
 
-### king of networks
+### Kinds of networks 🌉
 
 - list the networks used by Docker
   ```bash
@@ -696,7 +683,7 @@ volumes:
    1. Used for multi-host container communication.
    2. Enables communication between containers across different Docker hosts.
 
-### DNS
+### DNS 🌐🔗
 
 - Docker uses one `DNS server`
 - Each container has one `DNS resolver`
@@ -705,7 +692,7 @@ volumes:
   - the service/container \*\*\*\*`api` needs to connect with the service/container `db`
     ![image.png](04%20-%20Multiple%20Containers%201e88a69dcec780dab5fed9bfbbaf55ed/image%201.png)
 
-## 08 - Independent Containers
+## 08 - Independent Containers 🛠️
 
 - When you need that one `service` must setting up first before another `service`. You could use the property `depends on` and pass the name of the service that you need.
   ![image.png](04%20-%20Multiple%20Containers%201e88a69dcec780dab5fed9bfbbaf55ed/image%202.png)
