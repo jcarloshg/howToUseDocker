@@ -1,3 +1,62 @@
+# How to use Docker? 🐳🚀
+
+## 🌟 Description 🌟
+
+- This project is designed to teach you how to Docker, a powerful tool for creating, deploying, and managing containerized applications.
+
+- Through examples and detailed explanations, you will learn how to:
+
+  - build images
+  - manage containers
+  - optimize your development workflows.
+
+- Get ready to learn about Docker! 🐳🚀
+
+## 📋 Index
+
+### 01 - Intro
+
+- [**05 - Qué es Docker**](#05---qué-es-docker)
+- [**09 - Proceso de desarrollo con Docker**](#09---proceso-de-desarrollo-con-docker)
+
+### 02 - Build Images
+
+- [**02 - Imagen vs contenedor**](#02---imagen-vs-contenedor)
+- [**04 - Dockerfile**](#04---dockerfile)
+- [**05 - Select one image / run one container**](#05---select-one-image--run-one-container)
+- [**06 - Copy file into the container**](#06---copy-file-into-the-container)
+- [**07 - Ignore file**](#07---ignore-file)
+- [**08 - Run commands**](#08---run-commands)
+- [**09 - Accelerate images**](#09---accelerate-images)
+- [**10 - Environment variables**](#10---environment-variables)
+- [**11 - Commands CMD**](#11---commands-cmd)
+  - [**RUN vs CMD**](#run-vs-cmd)
+  - [**Entrypoint**](#entrypoint)
+- [**12 - Ports**](#12---ports)
+- [**13 - Users**](#13---users)
+  - [**Create users and groups**](#create-users-and-groups)
+  - [**Add the command in Dockerfile**](#add-the-command-in-dockerfile)
+- [**14 - Delete images**](#14---delete-images)
+- [**15 - Tags**](#15---tags)
+
+### 03 - Containers
+
+- [**02 - Start Containers**](#02---start-containers)
+- [**03 - Logs**](#03---logs)
+- [**04 - Ports**](#04---ports)
+- [**05 - Start vs Run**](#05---start-vs-run)
+- [**06 - Delete containers**](#06---delete-containers)
+- [**07 - Execute commands**](#07---execute-commands)
+
+### 04 - Multiple Containers
+
+- [**02 - Clean all**](#02---clean-all)
+- [**04 - File docker-compose.yml**](#04---file-docker-compose-yml)
+- [**05 - Management the images**](#05---management-the-images)
+- [**06 - Logs**](#06---logs)
+- [**07 - Networks**](#07---networks)
+- [**08 - Independent Containers**](#08---independent-containers)
+
 # 01 - Intro
 
 ## **05 - Qué es Docker**
@@ -160,7 +219,7 @@ index.html                      public
     - Only the files of the proyect were updated
     - When Docker detects one change in one of the steps, the next steps will be rebuilded, so it will take more time.
     - With this strategy only the last step will detect change in the files in the project, so this will be the only one that will be rebuilt
-  ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%207.png)
+      ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%207.png)
 - When we run this command twice, we can see that the time was reduced.
   ```bash
   sudo docker build -t first-docker-app-react .
@@ -192,12 +251,12 @@ index.html                      public
   ```
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2011.png)
 
-## RUN vs CDM
+### RUN vs CDM
 
 - RUN runs when the container is being created.
 - CDM runs after the container was setted up.
 
-## Entrypoint
+### Entrypoint
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2012.png)
 
@@ -210,13 +269,13 @@ index.html                      public
 - check what user is running in the container
   ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2014.png)
 
-## Create users and groups
+### Create users and groups
 
 1.  ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2015.png)
 
 2.  ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2016.png)
 
-## Add the command in Dockerfile
+### Add the command in Dockerfile
 
 ![image.png](02%20-%20Build%20images%201e68a69dcec780b182a7dcd4c9eabe3e/image%2017.png)
 
@@ -627,7 +686,7 @@ volumes:
 - When one service/container wants to connect with another servicer/container; Its `DNS resolver` will request the `IP` to the service `DNS of docker`, this has the responsibility to responding the `IP` according with the name of the service/container.
   - the service/container `app` needs to connect with the service/container `api`
   - the service/container \*\*\*\*`api` needs to connect with the service/container `db`
-  ![image.png](04%20-%20Multiple%20Containers%201e88a69dcec780dab5fed9bfbbaf55ed/image%201.png)
+    ![image.png](04%20-%20Multiple%20Containers%201e88a69dcec780dab5fed9bfbbaf55ed/image%201.png)
 
 ## 08 - Independent Containers
 
